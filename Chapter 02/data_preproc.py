@@ -16,7 +16,7 @@ print('\n Binarize data : \n',data_binarize)
 
 # Print mean and standart deviation :
 print('\n Before:')
-print('Mean = ', input_data(axis = 0))
+print('Mean = ', input_data.mean(axis = 0))
 print('Std deviation =', input_data.std(axis = 0))
 
 # Min max scaling
