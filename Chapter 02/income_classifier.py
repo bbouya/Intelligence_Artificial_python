@@ -78,7 +78,7 @@ for i, item in enumerate(input_data):
     if item.isdigit():
         input_data_encoded[i] = int(input_data[i])
     else:
-        input_data_encoded[i] = int(label_encoder[count].transform(input_data[i]))
+        input_data_encoded[i] = int(label_encoder[count].fit_transform(input_data[i]))
         count += 1 
 
 input_data_encoded = np.array(input_data_encoded)
